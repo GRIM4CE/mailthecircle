@@ -36,7 +36,7 @@ export default {
 
   .payment-container-header {
     background-color: $black;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
   }
 
   h2 {

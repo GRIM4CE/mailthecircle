@@ -12,11 +12,16 @@ export default {}
 @import '../assets/variables.scss';
 
 header {
-    background-color: $black;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  border-bottom-left-radius: 75% 10%;
+  border-bottom-right-radius: 75% 10%;
+  background: $white;
+  z-index: 2;
 }
 
 h1 {
-    color: $white;
     margin: 0;
     padding: 1rem;
 }
