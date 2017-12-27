@@ -12206,7 +12206,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.payment-container[data-v-52b96db4] {\n  width: 400px;\n  margin: 2rem auto;\n  border: 1px solid #000;\n  border-radius: 8px;\n  overflow: hidden;\n}\n.payment-container-header[data-v-52b96db4] {\n  background-color: #000;\n  padding: .5rem 1rem;\n}\nh2[data-v-52b96db4] {\n  margin: 0;\n  color: #fff;\n}\n.payment-container-main[data-v-52b96db4] {\n  padding: 1rem 2rem;\n}\ninput[type='text'][data-v-52b96db4] {\n  width: 100%;\n  margin-bottom: 1rem;\n}\n", ""]);
+exports.push([module.i, "\n.payment-container[data-v-52b96db4] {\n  width: 400px;\n  margin: 2rem auto;\n  border: 1px solid #000;\n  border-radius: 8px;\n  overflow: hidden;\n}\n.payment-container-header[data-v-52b96db4] {\n  background-color: #000;\n  padding: 0.5rem 1rem;\n}\nh2[data-v-52b96db4] {\n  margin: 0;\n  color: #fff;\n}\n.payment-container-main[data-v-52b96db4] {\n  padding: 1rem 2rem;\n}\ninput[type='text'][data-v-52b96db4] {\n  width: 100%;\n  margin-bottom: 1rem;\n}\n", ""]);
 
 // exports
 
@@ -12252,14 +12252,14 @@ var staticRenderFns = [
               attrs: {
                 type: "hidden",
                 name: "hosted_button_id",
-                value: "LVMKNFD2HCPF4"
+                value: "U2TZ3HJLN2B9W"
               }
             }),
             _vm._v(" "),
             _c("input", {
               attrs: { type: "hidden", name: "on0", value: "Recipients Name" }
             }),
-            _vm._v("Recipients Name\n      "),
+            _vm._v("Recipients Name\n        "),
             _c("input", {
               attrs: { type: "text", name: "os0", maxlength: "200" }
             }),
@@ -12268,10 +12268,10 @@ var staticRenderFns = [
               attrs: {
                 type: "hidden",
                 name: "on1",
-                value: "Recipients Address"
+                value: "Recipients Mailing Address"
               }
             }),
-            _vm._v("Recipients Address\n      "),
+            _vm._v("Recipients Mailing Address\n        "),
             _c("input", {
               attrs: { type: "text", name: "os1", maxlength: "200" }
             }),
@@ -12280,7 +12280,7 @@ var staticRenderFns = [
               attrs: {
                 type: "image",
                 src:
-                  "https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif",
+                  "https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif",
                 border: "0",
                 name: "submit",
                 alt: "PayPal - The safer, easier way to pay online!"
