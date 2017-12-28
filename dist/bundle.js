@@ -588,8 +588,6 @@ module.exports = function normalizeComponent (
 //
 //
 //
-//
-//
 
 
 
@@ -12345,25 +12343,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("header", { staticClass: "hero-head" }, [
-      _c(
-        "object",
-        {
-          staticClass: "hero-head-logo",
-          attrs: {
-            type: "image/svg+xml",
-            data: "assets/mail-the-circle-logo.svg"
-          }
-        },
-        [
-          _c("img", {
-            staticClass: "hero-head-logo",
-            attrs: {
-              src: "assets/mail-the-circle-logo.png",
-              alt: "Mail The Circle"
-            }
-          })
-        ]
-      )
+      _c("img", {
+        staticClass: "hero-head-logo",
+        attrs: {
+          src: "assets/mail-the-circle-logo.svg",
+          alt: "Mail The Circle"
+        }
+      })
     ])
   },
   function() {
@@ -12389,7 +12375,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "After a few trial runs and much laughter, we decided to take this pony on tour. Seeing our enemies (Yes you, Todd!) unexpectedly open their mail only to find the image of a thumb and index finger pressed together is the most satisfying revenge!\n          "
+              "After a few trial runs and much laughter, we decided to take this pony on tour. Seeing our enemies (Yes you, Todd!) unexpectedly open their mail only to find the image of a thumb and index finger pressed together is the most satisfying revenge!\n        "
             )
           ]),
           _vm._v(" "),

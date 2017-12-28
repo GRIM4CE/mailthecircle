@@ -2,9 +2,7 @@
 <main>
   <section class="hero">
     <header class="hero-head">
-      <object class="hero-head-logo" type="image/svg+xml" data="assets/mail-the-circle-logo.svg">
-        <img class="hero-head-logo" src="assets/mail-the-circle-logo.png" alt="Mail The Circle">
-      </object>
+      <img class="hero-head-logo" src="assets/mail-the-circle-logo.svg" alt="Mail The Circle">
     </header>
     <div class="hero-opactiy">
       <appHead></appHead>
@@ -36,7 +34,7 @@ the price includes double sided. So we can do the congratulations note on the ba
           "friends" questioning their existence. We decided it was time to mail the circle.</p>
 
         <p>After a few trial runs and much laughter, we decided to take this pony on tour. Seeing our enemies (Yes you, Todd!) unexpectedly open their mail only to find the image of a thumb and index finger pressed together is the most satisfying revenge!
-          </p>
+        </p>
 
         <p>Here is the deal: give us $3.99, a name, and a mailing address and we will send this day wrecker to anyone your heart desires. All you need to do is wait a few weeks in anticipation for the day when Jerry finally gets it.</p>
       </div>
