@@ -57,7 +57,7 @@
 
 @media all and (min-width: 37.5rem) {
   .hero-content {
-    padding: 196px 5rem 3rem;
+    padding: 196px 5rem 5rem;
   }
 
   .hero-header {
@@ -68,6 +68,10 @@
   }
 
   .hero-p {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  .hero-cta {
+    margin-bottom: 2rem;
   }
 }
