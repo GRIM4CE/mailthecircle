@@ -575,6 +575,11 @@ module.exports = function normalizeComponent (
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -11979,7 +11984,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n* {\n  box-sizing: border-box;\n}\nbody {\n  margin: 0;\n  font-family: helvetica, sans-serif;\n  font-size: 16px;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin: 0;\n  padding: 0;\n}\np {\n  margin-bottom: 1rem;\n  font-size: 18px;\n  font-weight: 300;\n  line-height: 1.4;\n}\n.section {\n  padding: 3rem 1.5rem;\n}\n.section-wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  max-width: 1400px;\n  margin: 0 auto;\n}\n.section-header {\n  width: 100%;\n  margin-bottom: 0.5rem;\n  font-size: 36px;\n  text-align: center;\n}\n.section-subheader {\n  width: 100%;\n  margin-bottom: 1rem;\n  color: #0FD4CA;\n  font-size: 28px;\n  font-weight: 400;\n  text-align: center;\n}\n.col-2 {\n  flex: 1 100%;\n}\n.background-medium {\n  background-color: #404040;\n  color: #fff;\n}\n@media all and (min-width: 37.5rem) {\n.section {\n    padding: 5rem 3rem;\n}\n.section-header {\n    font-size: 48px;\n}\n.section-subheader {\n    margin-bottom: 2rem;\n    font-size: 36px;\n}\n.col-2 {\n    flex: calc(50% - 1rem);\n    margin: 0 0.5rem;\n}\n}\n.hero {\n  background: url(\"/assets/hero.jpg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.hero-head {\n  position: absolute;\n  width: 100%;\n  height: 100px;\n  border-bottom-left-radius: 75% 10%;\n  border-bottom-right-radius: 75% 10%;\n  background: #fff;\n  z-index: 2;\n}\n.hero-header-logo {\n  margin: 0;\n  padding: 1rem;\n}\n.hero-opactiy {\n  width: 100%;\n  min-height: 100vh;\n  background-color: rgba(64, 64, 64, 0.4);\n  color: #fff;\n}\n.hero-content {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 132px 1.5rem 3rem;\n}\n.hero-header {\n  margin-bottom: 1rem;\n  font-size: 36px;\n  line-height: 1.2;\n  text-align: center;\n}\n.hero-p {\n  margin-bottom: 2rem;\n}\n.hero-cta {\n  display: block;\n  margin: 0 auto;\n  padding: 0.65rem 1.5rem;\n  border: 1px solid #0FD4CA;\n  border-radius: 0;\n  background-color: #0FD4CA;\n  color: #fff;\n  font-size: 18px;\n}\n@media all and (min-width: 37.5rem) {\n.hero-content {\n    padding: 196px 5rem 5rem;\n}\n.hero-header {\n    max-width: 1000px;\n    margin: 0 auto 1.5rem;\n    padding: 0 3rem;\n    font-size: 56px;\n}\n.hero-p {\n    font-size: 22px;\n}\n.hero-cta {\n    margin-bottom: 2rem;\n}\n}\n.about-video {\n  display: none;\n  height: 300px;\n  background-color: #dadada;\n}\n@media all and (min-width: 37.5rem) {\n.about-video {\n    display: block;\n}\n}\n.payment-text {\n  margin-bottom: 2rem;\n}\n.payment-container {\n  max-width: 400px;\n  margin: 0 auto;\n}\n.payment-container-header {\n  padding: 0.5rem 1rem;\n  background-color: #000;\n  color: #fff;\n  text-align: center;\n}\n.payment-container-main {\n  padding: 1rem 2rem;\n}\n.payment-container-main input[type='text'] {\n    width: 100%;\n    margin-bottom: 1rem;\n}\n.footer {\n  background-color: #000;\n  color: #fff;\n}\n.footer-wrapper {\n  display: flex;\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: .5rem 1.5rem;\n}\n.footer-text {\n  font-size: 12px;\n  font-weight: 300;\n}\n.copywrite {\n  margin-right: auto;\n}\n", ""]);
+exports.push([module.i, "\n* {\n  box-sizing: border-box;\n}\nbody {\n  margin: 0;\n  font-family: helvetica, sans-serif;\n  font-size: 16px;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin: 0;\n  padding: 0;\n}\np {\n  margin-bottom: 1rem;\n  font-size: 18px;\n  font-weight: 300;\n  line-height: 1.4;\n}\n.section {\n  padding: 3rem 1.5rem;\n}\n.section-wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  max-width: 1400px;\n  margin: 0 auto;\n}\n.section-header {\n  width: 100%;\n  margin-bottom: 0.5rem;\n  font-size: 36px;\n  text-align: center;\n}\n.section-subheader {\n  width: 100%;\n  margin-bottom: 1rem;\n  color: #4e86ba;\n  font-size: 28px;\n  font-weight: 400;\n  text-align: center;\n}\n.col-2 {\n  flex: 1 100%;\n}\n.background-medium {\n  background-color: #404040;\n  color: #fff;\n}\n@media all and (min-width: 37.5rem) {\n.section {\n    padding: 5rem 3rem;\n}\n.section-header {\n    font-size: 48px;\n}\n.section-subheader {\n    margin-bottom: 2rem;\n    font-size: 36px;\n}\n.col-2 {\n    flex: calc(50% - 1rem);\n    margin: 0 0.5rem;\n}\n}\n.hero {\n  background: url(\"/assets/hero.jpg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.hero-head {\n  position: absolute;\n  width: 100%;\n  border-bottom-left-radius: 75% 10%;\n  border-bottom-right-radius: 75% 10%;\n  background: #fff;\n  z-index: 2;\n}\n.hero-head-logo {\n  display: block;\n  width: 100%;\n  max-width: 250px;\n  margin: 0 auto;\n  padding: 1rem;\n}\n.hero-opactiy {\n  width: 100%;\n  min-height: 100vh;\n  background-color: rgba(64, 64, 64, 0.4);\n  color: #fff;\n}\n.hero-content {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 132px 1.5rem 3rem;\n}\n.hero-header {\n  margin-bottom: 1rem;\n  font-size: 36px;\n  line-height: 1.2;\n  text-align: center;\n}\n.hero-p {\n  margin-bottom: 2rem;\n}\n.hero-cta {\n  display: block;\n  margin: 0 auto;\n  padding: 0.65rem 1.5rem;\n  border: 1px solid #4e86ba;\n  border-radius: 0;\n  background-color: #4e86ba;\n  color: #fff;\n  font-size: 18px;\n}\n@media all and (min-width: 37.5rem) {\n.hero-content {\n    padding: 196px 5rem 5rem;\n}\n.hero-header {\n    max-width: 1000px;\n    margin: 0 auto 1.5rem;\n    padding: 0 3rem;\n    font-size: 56px;\n}\n.hero-p {\n    font-size: 22px;\n}\n.hero-cta {\n    margin-bottom: 2rem;\n}\n}\n.about-video {\n  display: none;\n  height: 300px;\n  background-color: #dadada;\n}\n@media all and (min-width: 37.5rem) {\n.about-video {\n    display: block;\n}\n}\n.payment-text {\n  margin-bottom: 2rem;\n}\n.payment-container {\n  max-width: 400px;\n  margin: 0 auto;\n}\n.payment-container-header {\n  padding: 0.5rem 1rem;\n  background-color: #000;\n  color: #fff;\n  text-align: center;\n}\n.payment-container-main {\n  padding: 1rem 2rem;\n}\n.payment-container-main input[type='text'] {\n    width: 100%;\n    margin-bottom: 1rem;\n}\n.footer {\n  background-color: #000;\n  color: #fff;\n}\n.footer-wrapper {\n  display: flex;\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: .5rem 1.5rem;\n}\n.footer-text {\n  font-size: 12px;\n  font-weight: 300;\n}\n.copywrite {\n  margin-right: auto;\n}\n", ""]);
 
 // exports
 
@@ -12303,7 +12308,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("header", { staticClass: "hero-head" }, [
-      _c("h1", { staticClass: "hero-head-logo" }, [_vm._v("Mail A Circle")])
+      _c("img", {
+        staticClass: "hero-head-logo",
+        attrs: {
+          src: "assets/mail-the-circle-logo.svg",
+          alt: "Mail The Circle"
+        }
+      })
     ])
   },
   function() {

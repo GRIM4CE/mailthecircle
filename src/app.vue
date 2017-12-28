@@ -2,7 +2,7 @@
 <main>
   <section class="hero">
     <header class="hero-head">
-      <h1 class="hero-head-logo">Mail A Circle</h1>
+      <img class="hero-head-logo" src="assets/mail-the-circle-logo.svg" alt="Mail The Circle">
     </header>
     <div class="hero-opactiy">
       <appHead></appHead>
@@ -17,6 +17,11 @@
 
   <!-- We’ve spent a few hours scheming and what we’ve decided to commit our free time to offering you a service to send a friend or foe “The Circle” by mail for a phenomenal fee of $2.99. And because our commitment and love of the sport we’ve decided
   to mail bonus circles to top celebs based on your feedback. Check our meter to see who's gonna get it next -->
+
+  <!-- "the circle will be printed on a 4'' x 6'' 16PT Postcard with a UV Coated Finish
+the price includes double sided. So we can do the congratulations note on the backside -->
+
+<!-- "congratulations! You have just been mailed the Circle. Now get ready to receive two hits from one of your friends. We can't tell you who sent it so don't forget to always be looking over your shoulder and get ready for hell on earth" -->
 
   <section class="section about">
     <div class="section-wrapper">
