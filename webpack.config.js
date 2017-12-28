@@ -1,4 +1,6 @@
 const path = require('path');
+const PrerenderSpaPlugin = require('prerender-spa-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const config = {
   entry: './src/main.js',
@@ -21,7 +23,14 @@ const config = {
       vue: 'vue/dist/vue.js'
     }
   },
+  plugins: [
+    new CopyWebpackPlugin([{
+      from: 'src/static'
+    }]),
+    new PrerenderSpaPlugin(
+      path.join(__dirname, 'dist'), ['/']
+    )
+  ]
 }
 
 module.exports = config;
-  
