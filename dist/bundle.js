@@ -60,11 +60,38 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 /*
@@ -146,7 +173,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -165,7 +192,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(15)
+var listToStyles = __webpack_require__(14)
 
 /*
 type StyleObject = {
@@ -367,7 +394,7 @@ function applyToTag (styleElement, obj) {
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -476,39 +503,11 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
 /* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_header_vue__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_payment_vue__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_payment_vue__ = __webpack_require__(15);
 //
 //
 //
@@ -542,14 +541,52 @@ module.exports = g;
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
+  data: function () {
+    return {
+      year: new Date()
+    };
+  },
   components: {
-    appHead: __WEBPACK_IMPORTED_MODULE_0__components_header_vue__["a" /* default */],
-    payment: __WEBPACK_IMPORTED_MODULE_1__components_payment_vue__["a" /* default */]
+    payment: __WEBPACK_IMPORTED_MODULE_0__components_payment_vue__["a" /* default */]
+  },
+  methods: {
+    goToPayments() {
+      document.getElementById('payments').scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 });
 
@@ -564,20 +601,6 @@ module.exports = g;
 //
 //
 //
-
-/* harmony default export */ __webpack_exports__["a"] = ({});
-
-/***/ }),
-/* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -596,14 +619,14 @@ module.exports = g;
 /* harmony default export */ __webpack_exports__["a"] = ({});
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_vue__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_vue__ = __webpack_require__(11);
 
 
 
@@ -615,7 +638,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 });
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, setImmediate) {/*!
@@ -11417,10 +11440,10 @@ return Vue$3;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(9).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(8).setImmediate))
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -11473,13 +11496,13 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(10);
+__webpack_require__(9);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -11669,10 +11692,10 @@ exports.clearImmediate = clearImmediate;
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(11)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(10)))
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -11862,19 +11885,19 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_app_vue__ = __webpack_require__(4);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5ef48958_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_app_vue__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5ef48958_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_app_vue__ = __webpack_require__(19);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(13)
+  __webpack_require__(12)
 }
-var normalizeComponent = __webpack_require__(2)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 
 
@@ -11918,17 +11941,17 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(14);
+var content = __webpack_require__(13);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(1)("4f7fd86e", content, false);
+var update = __webpack_require__(2)("4f7fd86e", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -11944,21 +11967,21 @@ if(false) {
 }
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(0)(undefined);
+exports = module.exports = __webpack_require__(1)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "\n* {\n  box-sizing: border-box;\n}\nbody {\n  margin: 0;\n  font-family: helvetica, sans-serif;\n  font-size: 16px;\n}\n.section {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  padding: 5rem 3rem;\n}\n.section-header {\n  width: 100%;\n  font-size: 28px;\n  text-align: center;\n}\n.section-subheader {\n  width: 100%;\n  color: #0FD4CA;\n  font-size: 22px;\n  font-weight: 400;\n  text-align: center;\n}\n.col-2 {\n  flex: calc(50% - 1rem);\n  margin: 0 0.5rem;\n}\n.background-medium {\n  background-color: #404040;\n  color: #fff;\n}\n.hero {\n  width: 100%;\n  height: 100vh;\n  background: url(\"/assets/hero.jpg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.about-video {\n  background-color: #dadada;\n  height: 300px;\n}\n.about-text p {\n  margin: 0;\n}\n", ""]);
+exports.push([module.i, "\n* {\n  box-sizing: border-box;\n}\nbody {\n  margin: 0;\n  font-family: helvetica, sans-serif;\n  font-size: 16px;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin: 0;\n  padding: 0;\n}\np {\n  margin-bottom: 1rem;\n  font-size: 18px;\n  font-weight: 300;\n  line-height: 1.4;\n}\n.section {\n  padding: 3rem 1.5rem;\n}\n.section-wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  max-width: 1400px;\n  margin: 0 auto;\n}\n.section-header {\n  width: 100%;\n  margin-bottom: 0.5rem;\n  font-size: 36px;\n  text-align: center;\n}\n.section-subheader {\n  width: 100%;\n  margin-bottom: 1rem;\n  color: #0FD4CA;\n  font-size: 28px;\n  font-weight: 400;\n  text-align: center;\n}\n.col-2 {\n  flex: 1 100%;\n}\n.background-medium {\n  background-color: #404040;\n  color: #fff;\n}\n@media all and (min-width: 37.5rem) {\n.section {\n    padding: 5rem 3rem;\n}\n.section-header {\n    font-size: 48px;\n}\n.section-subheader {\n    margin-bottom: 2rem;\n    font-size: 36px;\n}\n.col-2 {\n    flex: calc(50% - 1rem);\n    margin: 0 0.5rem;\n}\n}\n.hero {\n  background: url(\"/assets/hero.jpg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.hero-head {\n  position: absolute;\n  width: 100%;\n  height: 100px;\n  border-bottom-left-radius: 75% 10%;\n  border-bottom-right-radius: 75% 10%;\n  background: #fff;\n  z-index: 2;\n}\n.hero-header-logo {\n  margin: 0;\n  padding: 1rem;\n}\n.hero-opactiy {\n  width: 100%;\n  min-height: 100vh;\n  background-color: rgba(64, 64, 64, 0.4);\n  color: #fff;\n}\n.hero-content {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 132px 1.5rem 3rem;\n}\n.hero-header {\n  margin-bottom: 1rem;\n  font-size: 36px;\n  line-height: 1.2;\n  text-align: center;\n}\n.hero-p {\n  margin-bottom: 2rem;\n}\n.hero-cta {\n  display: block;\n  margin: 0 auto;\n  padding: 0.65rem 1.5rem;\n  border: 1px solid #0FD4CA;\n  border-radius: 0;\n  background-color: #0FD4CA;\n  color: #fff;\n  font-size: 18px;\n}\n@media all and (min-width: 37.5rem) {\n.hero-content {\n    padding: 196px 5rem 3rem;\n}\n.hero-header {\n    max-width: 1000px;\n    margin: 0 auto 1.5rem;\n    padding: 0 3rem;\n    font-size: 56px;\n}\n.hero-p {\n    font-size: 24px;\n}\n}\n.about-video {\n  display: none;\n  height: 300px;\n  background-color: #dadada;\n}\n@media all and (min-width: 37.5rem) {\n.about-video {\n    display: block;\n}\n}\n.payment-text {\n  margin-bottom: 2rem;\n}\n.payment-container {\n  max-width: 400px;\n  margin: 0 auto;\n}\n.payment-container-header {\n  padding: 0.5rem 1rem;\n  background-color: #000;\n  color: #fff;\n  text-align: center;\n}\n.payment-container-main {\n  padding: 1rem 2rem;\n}\n.payment-container-main input[type='text'] {\n    width: 100%;\n    margin-bottom: 1rem;\n}\n.footer {\n  background-color: #000;\n  color: #fff;\n}\n.footer-wrapper {\n  display: flex;\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: .5rem 1.5rem;\n}\n.footer-text {\n  font-size: 12px;\n  font-weight: 300;\n}\n.copywrite {\n  margin-right: auto;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports) {
 
 /**
@@ -11991,144 +12014,19 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_header_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_payment_vue__ = __webpack_require__(5);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_29e8c3c6_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_header_vue__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_52b96db4_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_payment_vue__ = __webpack_require__(18);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(17)
+  __webpack_require__(16)
 }
-var normalizeComponent = __webpack_require__(2)
-/* script */
-
-
-/* template */
-
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-29e8c3c6"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_header_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_29e8c3c6_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_header_vue__["a" /* default */],
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "src/components/header.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-29e8c3c6", Component.options)
-  } else {
-    hotAPI.reload("data-v-29e8c3c6", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
-
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(18);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(1)("17ea78ae", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-29e8c3c6\",\"scoped\":true,\"hasInlineConfig\":false}!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./header.vue", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-29e8c3c6\",\"scoped\":true,\"hasInlineConfig\":false}!../../node_modules/sass-loader/lib/loader.js!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./header.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\nheader[data-v-29e8c3c6] {\n  position: absolute;\n  width: 100%;\n  height: 100px;\n  border-bottom-left-radius: 75% 10%;\n  border-bottom-right-radius: 75% 10%;\n  background: #fff;\n  z-index: 2;\n}\nh1[data-v-29e8c3c6] {\n  margin: 0;\n  padding: 1rem;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 19 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("header", [_c("h1", [_vm._v("Mail A Circle")])])
-  }
-]
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-29e8c3c6", esExports)
-  }
-}
-
-/***/ }),
-/* 20 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_bustCache_payment_vue__ = __webpack_require__(6);
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_52b96db4_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_bustCache_payment_vue__ = __webpack_require__(23);
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(21)
-}
-var normalizeComponent = __webpack_require__(2)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 
 
@@ -12172,17 +12070,17 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 21 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(22);
+var content = __webpack_require__(17);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(1)("fc4f33fe", content, false);
+var update = __webpack_require__(2)("fc4f33fe", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -12198,21 +12096,21 @@ if(false) {
 }
 
 /***/ }),
-/* 22 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(0)(undefined);
+exports = module.exports = __webpack_require__(1)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "\n.payment-container[data-v-52b96db4] {\n  width: 400px;\n  margin: 2rem auto;\n  border: 1px solid #000;\n  border-radius: 8px;\n  overflow: hidden;\n}\n.payment-container-header[data-v-52b96db4] {\n  background-color: #000;\n  padding: 0.5rem 1rem;\n}\nh2[data-v-52b96db4] {\n  margin: 0;\n  color: #fff;\n}\n.payment-container-main[data-v-52b96db4] {\n  padding: 1rem 2rem;\n}\ninput[type='text'][data-v-52b96db4] {\n  width: 100%;\n  margin-bottom: 1rem;\n}\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
 
 /***/ }),
-/* 23 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12240,7 +12138,7 @@ var staticRenderFns = [
         },
         [
           _c("div", { staticClass: "payment-container-header" }, [
-            _c("h2", [_vm._v("Mail a circle to a friend or foe.")])
+            _c("h2", [_vm._v("Send The Circle")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "payment-container-main" }, [
@@ -12313,7 +12211,7 @@ if (false) {
 }
 
 /***/ }),
-/* 24 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12322,24 +12220,76 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("main", [
-    _c("section", { staticClass: "hero" }, [_c("appHead")], 1),
-    _vm._v(" "),
-    _vm._m(0),
+    _c("section", { staticClass: "hero" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "hero-opactiy" },
+        [
+          _c("appHead"),
+          _vm._v(" "),
+          _c("div", { staticClass: "hero-content" }, [
+            _c("h1", { staticClass: "hero-header" }, [
+              _vm._v("Hey Internets The 90’s Wetdream Has Arrived")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "hero-p" }, [
+              _vm._v(
+                "We’ve spent a few hours scheming and what we’ve decided to commit our free time to offering you a service to send a friend or foe “The Circle” by mail for a phenomenal fee of $2.99. And because our commitment and love of the sport we’ve decided\n          to mail bonus circles to top celebs based on your feedback. Check our meter to see who's gonna get it next."
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "hero-cta",
+                attrs: { type: "button" },
+                on: { click: _vm.goToPayments }
+              },
+              [_vm._v("Send The Circle")]
+            )
+          ])
+        ],
+        1
+      )
+    ]),
     _vm._v(" "),
     _vm._m(1),
     _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
     _c("section", { staticClass: "section payment" }, [
-      _c("h1", { staticClass: "section-header" }, [
-        _vm._v("Are you ready to Mail The Circle?")
-      ]),
-      _vm._v(" "),
-      _c("h2", { staticClass: "section-subheader" }, [
-        _vm._v("Some sort of sentance")
-      ]),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-2" }, [_c("payment")], 1)
+      _c("div", { staticClass: "section-wrapper" }, [
+        _c("h1", { staticClass: "section-header" }, [
+          _vm._v("Are you ready to Mail The Circle?")
+        ]),
+        _vm._v(" "),
+        _c("h2", { staticClass: "section-subheader" }, [
+          _vm._v("Some sort of sentance")
+        ]),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "col-2", attrs: { id: "payments" } },
+          [_c("payment")],
+          1
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("footer", { staticClass: "footer" }, [
+      _c("div", { staticClass: "footer-wrapper" }, [
+        _c("h6", { staticClass: "footer-text copywrite" }, [
+          _vm._v("© " + _vm._s(_vm.year.getFullYear()) + " MilkBomb")
+        ]),
+        _vm._v(" "),
+        _c("h6", { staticClass: "footer-text credit" }, [
+          _vm._v("A MilkBomb Production")
+        ])
+      ])
     ])
   ])
 }
@@ -12348,20 +12298,30 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("header", { staticClass: "hero-head" }, [
+      _c("h1", { staticClass: "hero-head-logo" }, [_vm._v("Mail A Circle")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("section", { staticClass: "section about" }, [
-      _c("h1", { staticClass: "section-header" }, [_vm._v("The Why")]),
-      _vm._v(" "),
-      _c("h2", { staticClass: "section-subheader" }, [
-        _vm._v("Some sort of sentance")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-2 about-video" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-2 about-text" }, [
-        _c("p", [
-          _vm._v(
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolor ducimus, sed sunt nesciunt excepturi eveniet voluptates, quos, aperiam, dicta autem in facilis esse at adipisci harum rem hic? Nostrum cumque animi qui vitae, sed harum quam ex ipsum blanditiis amet asperiores veniam esse placeat, doloremque alias, ducimus omnis. Facilis ipsum sunt mollitia odit labore voluptatum temporibus ab perferendis error explicabo, pariatur. Non beatae, nihil amet. Maiores tempora, quasi et facere consequuntur, autem! Nihil vitae omnis dolore, fugit! Neque expedita sed possimus vitae, iure harum enim commodi similique ipsa perferendis, aperiam cupiditate delectus itaque sunt quas maxime quis magnam."
-          )
+      _c("div", { staticClass: "section-wrapper" }, [
+        _c("h1", { staticClass: "section-header" }, [_vm._v("The Why")]),
+        _vm._v(" "),
+        _c("h2", { staticClass: "section-subheader" }, [
+          _vm._v("Some sort of sentance")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-2 about-video" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-2 about-text" }, [
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolor ducimus, sed sunt nesciunt excepturi eveniet voluptates, quos, aperiam, dicta autem in facilis esse at adipisci harum rem hic? Nostrum cumque animi qui vitae, sed harum quam\n          ex ipsum blanditiis amet asperiores veniam esse placeat, doloremque alias, ducimus omnis. Facilis ipsum sunt mollitia odit labore voluptatum temporibus ab perferendis error explicabo, pariatur. Non beatae, nihil amet. Maiores tempora, quasi\n          et facere consequuntur, autem! Nihil vitae omnis dolore, fugit! Neque expedita sed possimus vitae, iure harum enim commodi similique ipsa perferendis, aperiam cupiditate delectus itaque sunt quas maxime quis magnam."
+            )
+          ])
         ])
       ])
     ])
@@ -12374,8 +12334,10 @@ var staticRenderFns = [
       "section",
       { staticClass: "section timeline background-medium" },
       [
-        _c("h1", { staticClass: "section-header" }, [
-          _vm._v("Celebrity Circle Meter")
+        _c("div", { staticClass: "section-wrapper" }, [
+          _c("h1", { staticClass: "section-header" }, [
+            _vm._v("The Circle Gallery")
+          ])
         ])
       ]
     )
@@ -12385,9 +12347,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-2" }, [
-      _c("p", [
+      _c("p", { staticClass: "payment-text" }, [
         _vm._v(
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt minima accusamus, aperiam esse iusto unde corrupti animi beatae consequatur, vitae, soluta molestiae harum illo ad quidem enim. Temporibus optio accusantium dolorem. Consequuntur esse inventore repudiandae tenetur quod perspiciatis provident deserunt explicabo incidunt sed aspernatur possimus voluptatem optio rem nam, adipisci, ducimus, deleniti. Omnis provident sunt laborum adipisci enim consequatur, in ipsum eum maxime, d"
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt minima accusamus, aperiam esse iusto unde corrupti animi beatae consequatur, vitae, soluta molestiae harum illo ad quidem enim. Temporibus optio accusantium dolorem. Consequuntur\n          esse inventore repudiandae tenetur quod perspiciatis provident deserunt explicabo incidunt sed aspernatur possimus voluptatem optio rem nam, adipisci, ducimus, deleniti. Omnis provident sunt laborum adipisci enim consequatur, in ipsum eum maxime,\n          d\n        "
         )
       ])
     ])

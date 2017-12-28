@@ -1,0 +1,20 @@
+.footer {
+  background-color: $black;
+  color: $white;
+}
+
+.footer-wrapper {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: .5rem 1.5rem;
+}
+
+.footer-text {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.copywrite {
+  margin-right: auto;
+}

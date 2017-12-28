@@ -2,7 +2,7 @@
   <section>
       <form class="payment-container" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <div class="payment-container-header">
-          <h2>Mail a circle to a friend or foe.</h2>
+          <h2>Send The Circle</h2>
         </div>
         <div class="payment-container-main">
           <input type="hidden" name="cmd" value="_s-xclick">
@@ -23,32 +23,4 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/variables';
-
-.payment-container {
-    width: 400px;
-    margin: 2rem auto;
-    border: 1px solid $black;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.payment-container-header {
-    background-color: $black;
-    padding: 0.5rem 1rem;
-}
-
-h2 {
-    margin: 0;
-    color: $white;
-}
-
-.payment-container-main {
-    padding: 1rem 2rem;
-}
-
-input[type='text'] {
-    width: 100%;
-    margin-bottom: 1rem;
-}
 </style>
