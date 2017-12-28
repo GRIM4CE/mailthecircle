@@ -23,14 +23,14 @@ const config = {
       vue: 'vue/dist/vue.js'
     }
   },
-  // plugins: [
-  //   new CopyWebpackPlugin([{
-  //     from: 'src/static'
-  //   }]),
-  //   new PrerenderSpaPlugin(
-  //     path.join(__dirname, 'dist'), ['/']
-  //   )
-  // ]
+  plugins: [
+    new CopyWebpackPlugin([{
+      from: 'src/static'
+    }]),
+    new PrerenderSpaPlugin(
+      path.join(__dirname, 'dist'), ['/']
+    )
+  ]
 }
 
 module.exports = config;
