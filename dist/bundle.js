@@ -571,6 +571,10 @@ module.exports = function normalizeComponent (
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -12236,7 +12240,7 @@ var render = function() {
             _vm._v(" "),
             _c("p", { staticClass: "hero-p" }, [
               _vm._v(
-                "We’ve spent a few hours scheming and what we’ve decided to commit our free time to offering you a service to send a friend or foe “The Circle” by mail for a phenomenal fee of $2.99. And because our commitment and love of the sport we’ve decided\n          to mail bonus circles to top celebs based on your feedback. Check our meter to see who's gonna get it next."
+                "Sick of always losing at the circle game? Take it to the next level and mail the circle to your unexpecting friend or foe. For a minuscule fee of $3.99, we will print, package, and mail the circle. We deliver the circle, you deliver the hits!"
               )
             ]),
             _vm._v(" "),
@@ -12311,7 +12315,7 @@ var staticRenderFns = [
         _c("h1", { staticClass: "section-header" }, [_vm._v("The Why")]),
         _vm._v(" "),
         _c("h2", { staticClass: "section-subheader" }, [
-          _vm._v("Some sort of sentance")
+          _vm._v("To piss off those we hold near and dear to us.")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-2 about-video" }),
@@ -12319,7 +12323,19 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-2 about-text" }, [
           _c("p", [
             _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolor ducimus, sed sunt nesciunt excepturi eveniet voluptates, quos, aperiam, dicta autem in facilis esse at adipisci harum rem hic? Nostrum cumque animi qui vitae, sed harum quam\n          ex ipsum blanditiis amet asperiores veniam esse placeat, doloremque alias, ducimus omnis. Facilis ipsum sunt mollitia odit labore voluptatum temporibus ab perferendis error explicabo, pariatur. Non beatae, nihil amet. Maiores tempora, quasi\n          et facere consequuntur, autem! Nihil vitae omnis dolore, fugit! Neque expedita sed possimus vitae, iure harum enim commodi similique ipsa perferendis, aperiam cupiditate delectus itaque sunt quas maxime quis magnam."
+              'After being tagged in every "Circle Game" meme under the sun, we became infuriated with those we hardly consider our friends and decided it was time to get even. We devised a plan where we could anonymously win the game every time and leave our "friends" questioning their existence. We decided it was time to mail the circle.'
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "After a few trial runs and much laughter, we decided to take this pony on tour. Seeing our enemies (Yes you, Todd!) unexpectedly open their mail only to find the image of a thumb and index finger pressed together is the most satisfying revenge! "
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Here is the deal: give us $3.99, a name, and a mailing address and we will send this day wrecker to anyone your heart desires. All you need to do is wait a few weeks in anticipation for the day when Jerry finally gets it."
             )
           ])
         ])
