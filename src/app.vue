@@ -28,7 +28,7 @@
         <p>After a few trial runs and much laughter, we decided to take this pony on tour. Seeing our enemies (Yes you, Todd!) unexpectedly open their mail only to find the image of a thumb and index finger pressed together is the most satisfying revenge!
         </p>
 
-        <p>Here is the deal: give us $3.99, a name, and a mailing address and we will send this day wrecker to anyone your heart desires. All you need to do is wait a few weeks in anticipation for the day when Jerry finally gets it.</p>
+        <p>Here is the deal: give us $4.99, a name, and a mailing address and we will send this day wrecker to anyone your heart desires. All you need to do is wait a few weeks in anticipation for the day when Jerry finally gets it.</p>
       </div>
     </div>
   </section>
@@ -52,8 +52,9 @@
       <h1 class="section-header">Are you ready to Mail The Circle?</h1>
       <h2 class="section-subheader">We thought so.</h2>
       <div class="col-2">
-        <p class="payment-text">Alright so you've decided to Mail The Circle, we know you wont regret it. Just complete the paypal payment form with the recepiants name and address and leave the rest to us.
-        The circle will be printed on a 4" x 6" 16PT Postcard with a UV Coated Finish so you know it's something that will hang around. </p>
+        <p>Alright so you've decided to Mail The Circle, we know you wont regret it. Just complete the paypal payment form with the recepiants name and address and leave the rest to us.</p>
+        <p>The circle will be printed on a 4" x 6" 16PT Postcard with a UV Coated Finish so you know it's something that will hang around. </p>
+        <p>Each circle is sent anonymously so that your victim will constantly be looking over their shoulder, not knowing when or by who they will be hit. They will be living in hell.</p>
       </div>
       <div class="col-2" id="payments">
         <payment></payment>

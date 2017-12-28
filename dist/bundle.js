@@ -580,6 +580,7 @@ module.exports = function normalizeComponent (
 //
 //
 //
+//
 
 
 
@@ -607,6 +608,8 @@ module.exports = function normalizeComponent (
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+//
+//
 //
 //
 //
@@ -11987,7 +11990,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n* {\n  box-sizing: border-box;\n}\nbody {\n  margin: 0;\n  font-family: \"Open Sans\", sans-serif;\n  font-size: 16px;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin: 0;\n  padding: 0;\n}\np {\n  margin-bottom: 1rem;\n  font-size: 18px;\n  font-weight: 300;\n  line-height: 1.4;\n}\n.section {\n  padding: 3rem 1.5rem;\n}\n.section-wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  max-width: 1400px;\n  margin: 0 auto;\n}\n.section-header {\n  width: 100%;\n  margin-bottom: 0.5rem;\n  font-family: \"Bungee\", cursive;\n  font-size: 36px;\n  text-align: center;\n}\n.section-subheader {\n  width: 100%;\n  margin-bottom: 1rem;\n  color: #4e86ba;\n  font-family: \"Open Sans\", sans-serif;\n  font-size: 28px;\n  font-weight: 400;\n  text-align: center;\n}\n.col-2 {\n  flex: 1 100%;\n}\n.background-medium {\n  background-color: #404040;\n  color: #fff;\n}\n@media all and (min-width: 37.5rem) {\n.section {\n    padding: 5rem 3rem;\n}\n.section-header {\n    font-size: 48px;\n}\n.section-subheader {\n    margin-bottom: 2rem;\n    font-size: 36px;\n}\n.col-2 {\n    flex: calc(50% - 1rem);\n    margin: 0 0.5rem;\n}\n}\n.hero {\n  background: url(\"/assets/hero.jpg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.hero-head {\n  position: absolute;\n  width: 100%;\n  border-bottom-left-radius: 75% 10%;\n  border-bottom-right-radius: 75% 10%;\n  background: #fff;\n  z-index: 2;\n}\n.hero-head-logo {\n  display: block;\n  width: 100%;\n  max-width: 200px;\n  margin: 0 auto;\n  padding: 1rem;\n}\n.hero-opactiy {\n  width: 100%;\n  min-height: 100vh;\n  background-color: rgba(64, 64, 64, 0.4);\n  color: #fff;\n}\n.hero-content {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 148px 1.5rem 3rem;\n}\n.hero-header {\n  margin-bottom: 1rem;\n  font-family: \"Bungee\", cursive;\n  font-size: 36px;\n  line-height: 1.2;\n  text-align: center;\n}\n.hero-p {\n  margin-bottom: 2rem;\n}\n.hero-cta {\n  display: block;\n  margin: 0 auto;\n  padding: 0.65rem 1.5rem;\n  border: 1px solid #4e86ba;\n  border-radius: 0;\n  background-color: #4e86ba;\n  color: #fff;\n  font-size: 18px;\n}\n@media all and (min-width: 37.5rem) {\n.hero-content {\n    padding: 196px 5rem 5rem;\n}\n.hero-header {\n    max-width: 1000px;\n    margin: 0 auto 1.5rem;\n    padding: 0 3rem;\n    font-size: 56px;\n}\n.hero-head-logo {\n    max-width: 250px;\n}\n.hero-p {\n    font-size: 22px;\n}\n.hero-cta {\n    margin-bottom: 2rem;\n}\n}\n.about-video {\n  display: none;\n  height: 300px;\n  background-color: #dadada;\n}\n@media all and (min-width: 37.5rem) {\n.about-video {\n    display: block;\n}\n}\n.product {\n  display: block;\n  position: relative;\n  width: 100%;\n  max-width: 450px;\n  margin: 1rem auto 0;\n}\n.product:hover .product-overlay {\n    display: flex;\n}\n.product-image {\n  width: 100%;\n  border: 4px solid #fff;\n}\n.product-overlay {\n  display: none;\n  position: absolute;\n  align-content: flex-start;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  height: calc(100% - 4px);\n  background-color: rgba(78, 134, 186, 0.8);\n  cursor: pointer;\n}\n.product-text {\n  font-size: 18px;\n  line-height: 0;\n}\n.payment-text {\n  margin-bottom: 2rem;\n}\n.payment-container {\n  max-width: 400px;\n  margin: 0 auto;\n}\n.payment-container-header {\n  padding: 0.5rem 1rem;\n  background-color: #000;\n  color: #fff;\n  text-align: center;\n}\n.payment-container-main {\n  padding: 1rem 2rem;\n}\n.payment-container-main input[type='text'] {\n    width: 100%;\n    margin-bottom: 1rem;\n}\n.footer {\n  background-color: #000;\n  color: #fff;\n}\n.footer-wrapper {\n  display: flex;\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: .5rem 1.5rem;\n}\n.footer-text {\n  font-size: 12px;\n  font-weight: 300;\n}\n.copywrite {\n  margin-right: auto;\n}\n", ""]);
+exports.push([module.i, "\n* {\n  box-sizing: border-box;\n}\nbody {\n  margin: 0;\n  font-family: \"Open Sans\", sans-serif;\n  font-size: 16px;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin: 0;\n  padding: 0;\n}\np {\n  margin-bottom: 1rem;\n  font-size: 18px;\n  font-weight: 300;\n  line-height: 1.4;\n}\n.section {\n  padding: 3rem 1.5rem;\n}\n.section-wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  max-width: 1400px;\n  margin: 0 auto;\n}\n.section-header {\n  width: 100%;\n  margin-bottom: 0.5rem;\n  font-family: \"Bungee\", cursive;\n  font-size: 36px;\n  text-align: center;\n}\n.section-subheader {\n  width: 100%;\n  margin-bottom: 1rem;\n  color: #4e86ba;\n  font-family: \"Open Sans\", sans-serif;\n  font-size: 28px;\n  font-weight: 400;\n  text-align: center;\n}\n.col-2 {\n  flex: 1 100%;\n}\n.background-medium {\n  background-color: #404040;\n  color: #fff;\n}\n@media all and (min-width: 37.5rem) {\n.section {\n    padding: 5rem 3rem;\n}\n.section-header {\n    font-size: 48px;\n}\n.section-subheader {\n    margin-bottom: 2rem;\n    font-size: 36px;\n}\n.col-2 {\n    flex: calc(50% - 1rem);\n    margin: 0 0.5rem;\n}\n}\n.hero {\n  background: url(\"/assets/hero.jpg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.hero-head {\n  position: absolute;\n  width: 100%;\n  border-bottom-left-radius: 75% 10%;\n  border-bottom-right-radius: 75% 10%;\n  background: #fff;\n  z-index: 2;\n}\n.hero-head-logo {\n  display: block;\n  width: 100%;\n  max-width: 200px;\n  margin: 0 auto;\n  padding: 1rem;\n}\n.hero-opactiy {\n  width: 100%;\n  min-height: 100vh;\n  background-color: rgba(64, 64, 64, 0.4);\n  color: #fff;\n}\n.hero-content {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 148px 1.5rem 3rem;\n}\n.hero-header {\n  margin-bottom: 1rem;\n  font-family: \"Bungee\", cursive;\n  font-size: 36px;\n  line-height: 1.2;\n  text-align: center;\n}\n.hero-p {\n  margin-bottom: 2rem;\n}\n.hero-cta {\n  display: block;\n  margin: 0 auto;\n  padding: 0.65rem 1.5rem;\n  border: 1px solid #4e86ba;\n  border-radius: 0;\n  background-color: #4e86ba;\n  color: #fff;\n  font-size: 18px;\n}\n@media all and (min-width: 37.5rem) {\n.hero-content {\n    padding: 196px 5rem 5rem;\n}\n.hero-header {\n    max-width: 1000px;\n    margin: 0 auto 1.5rem;\n    padding: 0 3rem;\n    font-size: 56px;\n}\n.hero-head-logo {\n    max-width: 250px;\n}\n.hero-p {\n    font-size: 22px;\n}\n.hero-cta {\n    margin-bottom: 2rem;\n}\n}\n.about-video {\n  display: none;\n  height: 300px;\n  background-color: #dadada;\n}\n@media all and (min-width: 37.5rem) {\n.about-video {\n    display: block;\n}\n}\n.product {\n  display: block;\n  position: relative;\n  width: 100%;\n  max-width: 450px;\n  margin: 1rem auto 0;\n}\n.product:hover .product-overlay {\n    display: flex;\n}\n.product-image {\n  width: 100%;\n  border: 4px solid #fff;\n}\n.product-overlay {\n  display: none;\n  position: absolute;\n  align-content: flex-start;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  height: calc(100% - 4px);\n  background-color: rgba(78, 134, 186, 0.8);\n  cursor: pointer;\n}\n.product-text {\n  font-size: 18px;\n  line-height: 0;\n}\n.payment-text {\n  margin-bottom: 2rem;\n}\n.payment-container {\n  max-width: 400px;\n  margin: 0 auto;\n}\n.payment-container-header {\n  padding: 0.5rem 1rem;\n  background-color: #000;\n  color: #fff;\n  text-align: center;\n}\n.payment-container-main {\n  padding: 1rem 0.5rem;\n}\n.payment-container-main input[type='text'] {\n    width: 100%;\n    margin: 0.5rem 0 1rem;\n    padding: 0.5rem;\n}\n.payment-group {\n  margin: 0 auto;\n  text-align: center;\n}\n.footer {\n  background-color: #000;\n  color: #fff;\n}\n.footer-wrapper {\n  display: flex;\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: .5rem 1.5rem;\n}\n.footer-text {\n  font-size: 12px;\n  font-weight: 300;\n}\n.copywrite {\n  margin-right: auto;\n}\n", ""]);
 
 // exports
 
@@ -12167,9 +12170,9 @@ var staticRenderFns = [
             }),
             _vm._v(" "),
             _c("input", {
-              attrs: { type: "hidden", name: "on0", value: "Recipients Name" }
+              attrs: { type: "hidden", name: "on0", value: "Recipients Name:" }
             }),
-            _vm._v("Recipients Name\n        "),
+            _vm._v("Recipients Name:\n    "),
             _c("input", {
               attrs: { type: "text", name: "os0", maxlength: "200" }
             }),
@@ -12178,34 +12181,36 @@ var staticRenderFns = [
               attrs: {
                 type: "hidden",
                 name: "on1",
-                value: "Recipients Mailing Address"
+                value: "Recipients Address:"
               }
             }),
-            _vm._v("Recipients Mailing Address\n        "),
+            _vm._v("Recipients Address:\n    "),
             _c("input", {
               attrs: { type: "text", name: "os1", maxlength: "200" }
             }),
             _vm._v(" "),
-            _c("input", {
-              attrs: {
-                type: "image",
-                src:
-                  "https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif",
-                border: "0",
-                name: "submit",
-                alt: "PayPal - The safer, easier way to pay online!"
-              }
-            }),
-            _vm._v(" "),
-            _c("img", {
-              attrs: {
-                alt: "",
-                border: "0",
-                src: "https://www.paypalobjects.com/en_US/i/scr/pixel.gif",
-                width: "1",
-                height: "1"
-              }
-            })
+            _c("div", { staticClass: "payment-group" }, [
+              _c("input", {
+                attrs: {
+                  type: "image",
+                  src:
+                    "https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif",
+                  border: "0",
+                  name: "submit",
+                  alt: "PayPal - The safer, easier way to pay online!"
+                }
+              }),
+              _vm._v(" "),
+              _c("img", {
+                attrs: {
+                  alt: "",
+                  border: "0",
+                  src: "https://www.paypalobjects.com/en_US/i/scr/pixel.gif",
+                  width: "1",
+                  height: "1"
+                }
+              })
+            ])
           ])
         ]
       )
@@ -12373,7 +12378,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Here is the deal: give us $3.99, a name, and a mailing address and we will send this day wrecker to anyone your heart desires. All you need to do is wait a few weeks in anticipation for the day when Jerry finally gets it."
+              "Here is the deal: give us $4.99, a name, and a mailing address and we will send this day wrecker to anyone your heart desires. All you need to do is wait a few weeks in anticipation for the day when Jerry finally gets it."
             )
           ])
         ])
@@ -12385,9 +12390,21 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-2" }, [
-      _c("p", { staticClass: "payment-text" }, [
+      _c("p", [
         _vm._v(
-          "Alright so you've decided to Mail The Circle, we know you wont regret it. Just complete the paypal payment form with the recepiants name and address and leave the rest to us.\n        The circle will be printed on a 4\" x 6\" 16PT Postcard with a UV Coated Finish so you know it's something that will hang around. "
+          "Alright so you've decided to Mail The Circle, we know you wont regret it. Just complete the paypal payment form with the recepiants name and address and leave the rest to us."
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          'The circle will be printed on a 4" x 6" 16PT Postcard with a UV Coated Finish so you know it\'s something that will hang around. '
+        )
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Each circle is sent anonymously so that your victim will constantly be looking over their shoulder, not knowing when or by who they will be hit. They will be living in hell."
         )
       ])
     ])
