@@ -17,7 +17,7 @@
 .hero-head-logo {
   display: block;
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -32,7 +32,7 @@
 .hero-content {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 132px 1.5rem 3rem;
+  padding: 148px 1.5rem 3rem;
 }
 
 .hero-header {
@@ -67,6 +67,10 @@
     margin: 0 auto 1.5rem;
     padding: 0 3rem;
     font-size: 56px;
+  }
+
+  .hero-head-logo {
+    max-width: 250px;
   }
 
   .hero-p {

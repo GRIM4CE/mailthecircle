@@ -580,6 +580,16 @@ module.exports = function normalizeComponent (
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -594,7 +604,10 @@ module.exports = function normalizeComponent (
   },
   methods: {
     goToPayments() {
-      document.getElementById('payments').scrollIntoView({ behavior: "smooth", block: "start" });
+      document.getElementById('payments').scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
     }
   }
 });
@@ -11984,7 +11997,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n* {\n  box-sizing: border-box;\n}\nbody {\n  margin: 0;\n  font-family: helvetica, sans-serif;\n  font-size: 16px;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin: 0;\n  padding: 0;\n}\np {\n  margin-bottom: 1rem;\n  font-size: 18px;\n  font-weight: 300;\n  line-height: 1.4;\n}\n.section {\n  padding: 3rem 1.5rem;\n}\n.section-wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  max-width: 1400px;\n  margin: 0 auto;\n}\n.section-header {\n  width: 100%;\n  margin-bottom: 0.5rem;\n  font-size: 36px;\n  text-align: center;\n}\n.section-subheader {\n  width: 100%;\n  margin-bottom: 1rem;\n  color: #4e86ba;\n  font-size: 28px;\n  font-weight: 400;\n  text-align: center;\n}\n.col-2 {\n  flex: 1 100%;\n}\n.background-medium {\n  background-color: #404040;\n  color: #fff;\n}\n@media all and (min-width: 37.5rem) {\n.section {\n    padding: 5rem 3rem;\n}\n.section-header {\n    font-size: 48px;\n}\n.section-subheader {\n    margin-bottom: 2rem;\n    font-size: 36px;\n}\n.col-2 {\n    flex: calc(50% - 1rem);\n    margin: 0 0.5rem;\n}\n}\n.hero {\n  background: url(\"/assets/hero.jpg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.hero-head {\n  position: absolute;\n  width: 100%;\n  border-bottom-left-radius: 75% 10%;\n  border-bottom-right-radius: 75% 10%;\n  background: #fff;\n  z-index: 2;\n}\n.hero-head-logo {\n  display: block;\n  width: 100%;\n  max-width: 250px;\n  margin: 0 auto;\n  padding: 1rem;\n}\n.hero-opactiy {\n  width: 100%;\n  min-height: 100vh;\n  background-color: rgba(64, 64, 64, 0.4);\n  color: #fff;\n}\n.hero-content {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 132px 1.5rem 3rem;\n}\n.hero-header {\n  margin-bottom: 1rem;\n  font-size: 36px;\n  line-height: 1.2;\n  text-align: center;\n}\n.hero-p {\n  margin-bottom: 2rem;\n}\n.hero-cta {\n  display: block;\n  margin: 0 auto;\n  padding: 0.65rem 1.5rem;\n  border: 1px solid #4e86ba;\n  border-radius: 0;\n  background-color: #4e86ba;\n  color: #fff;\n  font-size: 18px;\n}\n@media all and (min-width: 37.5rem) {\n.hero-content {\n    padding: 196px 5rem 5rem;\n}\n.hero-header {\n    max-width: 1000px;\n    margin: 0 auto 1.5rem;\n    padding: 0 3rem;\n    font-size: 56px;\n}\n.hero-p {\n    font-size: 22px;\n}\n.hero-cta {\n    margin-bottom: 2rem;\n}\n}\n.about-video {\n  display: none;\n  height: 300px;\n  background-color: #dadada;\n}\n@media all and (min-width: 37.5rem) {\n.about-video {\n    display: block;\n}\n}\n.payment-text {\n  margin-bottom: 2rem;\n}\n.payment-container {\n  max-width: 400px;\n  margin: 0 auto;\n}\n.payment-container-header {\n  padding: 0.5rem 1rem;\n  background-color: #000;\n  color: #fff;\n  text-align: center;\n}\n.payment-container-main {\n  padding: 1rem 2rem;\n}\n.payment-container-main input[type='text'] {\n    width: 100%;\n    margin-bottom: 1rem;\n}\n.footer {\n  background-color: #000;\n  color: #fff;\n}\n.footer-wrapper {\n  display: flex;\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: .5rem 1.5rem;\n}\n.footer-text {\n  font-size: 12px;\n  font-weight: 300;\n}\n.copywrite {\n  margin-right: auto;\n}\n", ""]);
+exports.push([module.i, "\n* {\n  box-sizing: border-box;\n}\nbody {\n  margin: 0;\n  font-family: helvetica, sans-serif;\n  font-size: 16px;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin: 0;\n  padding: 0;\n}\np {\n  margin-bottom: 1rem;\n  font-size: 18px;\n  font-weight: 300;\n  line-height: 1.4;\n}\n.section {\n  padding: 3rem 1.5rem;\n}\n.section-wrapper {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  max-width: 1400px;\n  margin: 0 auto;\n}\n.section-header {\n  width: 100%;\n  margin-bottom: 0.5rem;\n  font-size: 36px;\n  text-align: center;\n}\n.section-subheader {\n  width: 100%;\n  margin-bottom: 1rem;\n  color: #4e86ba;\n  font-size: 28px;\n  font-weight: 400;\n  text-align: center;\n}\n.col-2 {\n  flex: 1 100%;\n}\n.background-medium {\n  background-color: #404040;\n  color: #fff;\n}\n@media all and (min-width: 37.5rem) {\n.section {\n    padding: 5rem 3rem;\n}\n.section-header {\n    font-size: 48px;\n}\n.section-subheader {\n    margin-bottom: 2rem;\n    font-size: 36px;\n}\n.col-2 {\n    flex: calc(50% - 1rem);\n    margin: 0 0.5rem;\n}\n}\n.hero {\n  background: url(\"/assets/hero.jpg\");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: cover;\n}\n.hero-head {\n  position: absolute;\n  width: 100%;\n  border-bottom-left-radius: 75% 10%;\n  border-bottom-right-radius: 75% 10%;\n  background: #fff;\n  z-index: 2;\n}\n.hero-head-logo {\n  display: block;\n  width: 100%;\n  max-width: 200px;\n  margin: 0 auto;\n  padding: 1rem;\n}\n.hero-opactiy {\n  width: 100%;\n  min-height: 100vh;\n  background-color: rgba(64, 64, 64, 0.4);\n  color: #fff;\n}\n.hero-content {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: 148px 1.5rem 3rem;\n}\n.hero-header {\n  margin-bottom: 1rem;\n  font-size: 36px;\n  line-height: 1.2;\n  text-align: center;\n}\n.hero-p {\n  margin-bottom: 2rem;\n}\n.hero-cta {\n  display: block;\n  margin: 0 auto;\n  padding: 0.65rem 1.5rem;\n  border: 1px solid #4e86ba;\n  border-radius: 0;\n  background-color: #4e86ba;\n  color: #fff;\n  font-size: 18px;\n}\n@media all and (min-width: 37.5rem) {\n.hero-content {\n    padding: 196px 5rem 5rem;\n}\n.hero-header {\n    max-width: 1000px;\n    margin: 0 auto 1.5rem;\n    padding: 0 3rem;\n    font-size: 56px;\n}\n.hero-head-logo {\n    max-width: 250px;\n}\n.hero-p {\n    font-size: 22px;\n}\n.hero-cta {\n    margin-bottom: 2rem;\n}\n}\n.about-video {\n  display: none;\n  height: 300px;\n  background-color: #dadada;\n}\n@media all and (min-width: 37.5rem) {\n.about-video {\n    display: block;\n}\n}\n.product {\n  display: block;\n  position: relative;\n  width: 100%;\n  max-width: 450px;\n  margin: 1rem auto 0;\n}\n.product:hover .product-overlay {\n    display: flex;\n}\n.product-image {\n  width: 100%;\n  border: 4px solid #fff;\n}\n.product-overlay {\n  display: none;\n  position: absolute;\n  align-content: flex-start;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  height: calc(100% - 4px);\n  background-color: rgba(78, 134, 186, 0.8);\n  cursor: pointer;\n}\n.product-text {\n  font-size: 18px;\n  line-height: 0;\n}\n.payment-text {\n  margin-bottom: 2rem;\n}\n.payment-container {\n  max-width: 400px;\n  margin: 0 auto;\n}\n.payment-container-header {\n  padding: 0.5rem 1rem;\n  background-color: #000;\n  color: #fff;\n  text-align: center;\n}\n.payment-container-main {\n  padding: 1rem 2rem;\n}\n.payment-container-main input[type='text'] {\n    width: 100%;\n    margin-bottom: 1rem;\n}\n.footer {\n  background-color: #000;\n  color: #fff;\n}\n.footer-wrapper {\n  display: flex;\n  max-width: 1400px;\n  margin: 0 auto;\n  padding: .5rem 1.5rem;\n}\n.footer-text {\n  font-size: 12px;\n  font-weight: 300;\n}\n.copywrite {\n  margin-right: auto;\n}\n", ""]);
 
 // exports
 
@@ -12240,12 +12253,12 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "hero-content" }, [
             _c("h1", { staticClass: "hero-header" }, [
-              _vm._v("Hey Internets The 90’s Wetdream Has Arrived")
+              _vm._v("The Circle Game Has Gone Postal")
             ]),
             _vm._v(" "),
             _c("p", { staticClass: "hero-p" }, [
               _vm._v(
-                "Sick of always losing at the circle game? Take it to the next level and mail the circle to your unexpecting friend or foe. For a minuscule fee of $3.99, we will print, package, and mail the circle. We deliver the circle, you deliver the hits!"
+                "Sick of always losing at the circle game? Take it to the next level and mail the circle to your unexpecting friend or foe. For a minuscule fee of $4.99, we will print, package, and mail the circle. We deliver the circle, you deliver the hits!"
               )
             ]),
             _vm._v(" "),
@@ -12256,7 +12269,7 @@ var render = function() {
                 attrs: { type: "button" },
                 on: { click: _vm.goToPayments }
               },
-              [_vm._v("Send The Circle")]
+              [_vm._v("Mail The Circle")]
             )
           ])
         ],
@@ -12266,7 +12279,31 @@ var render = function() {
     _vm._v(" "),
     _vm._m(1),
     _vm._v(" "),
-    _vm._m(2),
+    _c("section", { staticClass: "section timeline background-medium" }, [
+      _c("div", { staticClass: "section-wrapper" }, [
+        _c("h1", { staticClass: "section-header" }, [_vm._v("The Product")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "product" }, [
+          _c(
+            "div",
+            { staticClass: "product-overlay", on: { click: _vm.goToPayments } },
+            [
+              _c("span", { staticClass: "product-text" }, [
+                _vm._v("Mail The Circle")
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("img", {
+            staticClass: "product-image",
+            attrs: {
+              src: "assets/product.jpg",
+              alt: "The Product (Mail The Circle Image)"
+            }
+          })
+        ])
+      ])
+    ]),
     _vm._v(" "),
     _c("section", { staticClass: "section payment" }, [
       _c("div", { staticClass: "section-wrapper" }, [
@@ -12275,10 +12312,10 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("h2", { staticClass: "section-subheader" }, [
-          _vm._v("Some sort of sentance")
+          _vm._v("We thought so.")
         ]),
         _vm._v(" "),
-        _vm._m(3),
+        _vm._m(2),
         _vm._v(" "),
         _c(
           "div",
@@ -12308,13 +12345,25 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("header", { staticClass: "hero-head" }, [
-      _c("img", {
-        staticClass: "hero-head-logo",
-        attrs: {
-          src: "assets/mail-the-circle-logo.svg",
-          alt: "Mail The Circle"
-        }
-      })
+      _c(
+        "object",
+        {
+          staticClass: "hero-head-logo",
+          attrs: {
+            type: "image/svg+xml",
+            data: "assets/mail-the-circle-logo.svg"
+          }
+        },
+        [
+          _c("img", {
+            staticClass: "hero-head-logo",
+            attrs: {
+              src: "assets/mail-the-circle-logo.png",
+              alt: "Mail The Circle"
+            }
+          })
+        ]
+      )
     ])
   },
   function() {
@@ -12334,13 +12383,13 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-2 about-text" }, [
           _c("p", [
             _vm._v(
-              'After being tagged in every "Circle Game" meme under the sun, we became infuriated with those we hardly consider our friends and decided it was time to get even. We devised a plan where we could anonymously win the game every time and leave our "friends" questioning their existence. We decided it was time to mail the circle.'
+              'After being tagged in every "Circle Game" meme under the sun, we became infuriated with those we hardly consider our friends and decided it was time to get even. We devised a plan where we could anonymously win the game every time and leave our\n          "friends" questioning their existence. We decided it was time to mail the circle.'
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "After a few trial runs and much laughter, we decided to take this pony on tour. Seeing our enemies (Yes you, Todd!) unexpectedly open their mail only to find the image of a thumb and index finger pressed together is the most satisfying revenge! "
+              "After a few trial runs and much laughter, we decided to take this pony on tour. Seeing our enemies (Yes you, Todd!) unexpectedly open their mail only to find the image of a thumb and index finger pressed together is the most satisfying revenge!\n          "
             )
           ]),
           _vm._v(" "),
@@ -12352,22 +12401,6 @@ var staticRenderFns = [
         ])
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      { staticClass: "section timeline background-medium" },
-      [
-        _c("div", { staticClass: "section-wrapper" }, [
-          _c("h1", { staticClass: "section-header" }, [
-            _vm._v("The Circle Gallery")
-          ])
-        ])
-      ]
-    )
   },
   function() {
     var _vm = this
