@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "open http://localhost:3000 && nuxt",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start"
   },
   "license": "ISC",
   "devDependencies": {
+    "@nuxtjs/sitemap": "^0.0.3",
     "node-sass": "^4.7.2",
     "nuxt": "^1.0.0-rc11",
     "sass-loader": "^6.0.6"
