@@ -26,6 +26,10 @@ p {
   line-height: 1.4;
 }
 
+.container {
+  position: relative;
+}
+
 .section {
   padding: 3rem 1.5rem;
 }
@@ -89,4 +93,3 @@ p {
 @import './components/about';
 @import './components/product';
 @import './components/payments';
-@import './components/footer';
