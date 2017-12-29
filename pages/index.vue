@@ -84,7 +84,7 @@ import appFooter from '~/components/footer.vue'
 
 export default {
   head: {
-    titleTemplate: 'Mail The Circle',
+    title: 'Mail The Circle',
     meta: [{
       hid: 'description',
       name: 'description',

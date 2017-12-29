@@ -2,11 +2,10 @@
   "name": "thecirclegame",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build --spa",
-    "start": "nuxt start --spa"
+    "dev": "open http://localhost:3000 && nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
   },
   "license": "ISC",
   "devDependencies": {
