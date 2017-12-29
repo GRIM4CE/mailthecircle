@@ -1,6 +1,9 @@
 # dependencies
 /node_modules
 
+# production
+.nuxt
+
 # misc
 npm-debug.log
 

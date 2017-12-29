@@ -1,8 +1,8 @@
 <template lang="html">
-  <div class="container">
+  <main class="container">
     <section class="hero">
       <header class="hero-head">
-        <img class="hero-head-logo" src="assets/mail-the-circle-logo.svg" alt="Mail The Circle">
+        <img class="hero-head-logo" src="/mail-the-circle-logo.svg" alt="Mail The Circle">
       </header>
       <div class="hero-opactiy">
         <appHead></appHead>
@@ -19,7 +19,7 @@
         <h1 class="section-header">The Why</h1>
         <h2 class="section-subheader">To piss off those we hold near and dear to us.</h2>
         <div class="col-2 about-image">
-          <img src="assets/goodjob.jpg" alt="Good Job">
+          <img src="/goodjob.jpg" alt="Good Job">
         </div>
         <div class="col-2 about-text">
           <p>After being tagged in every "Circle Game" meme under the sun, we became infuriated with those we hardly consider our friends and decided it was time to get even. We devised a plan where we could anonymously win the game every time and leave our
@@ -40,7 +40,7 @@
           <div class="product-overlay" v-on:click="goToPayments">
             <span class="product-text">Mail The Circle</span>
           </div>
-          <img class="product-image" src="assets/product.jpg" alt="The Product (Mail The Circle Image)">
+          <img class="product-image" src="/product.jpg" alt="The Product (Mail The Circle Image)">
         </div>
       </div>
     </section>
@@ -55,19 +55,44 @@
           <p>Each circle is sent anonymously, so that your victim will constantly be looking over their shoulder, not knowing when or by who they will be hit. They will be living in hell.</p>
         </div>
         <div class="col-2" id="payments">
-          <payment></payment>
+          <form class="payment-container" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <div class="payment-container-header">
+              <h2>Send The Circle</h2>
+            </div>
+            <div class="payment-container-main">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="U2TZ3HJLN2B9W">
+            <input type="hidden" name="on0" value="Recipients Name">Recipients Name:
+            <input type="text" name="os0" maxlength="200">
+            <input type="hidden" name="on1" value="Recipients Address">Recipients Address:
+            <input type="text" name="os1" maxlength="200">
+              <div class="payment-group">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>
-  </div>
+    <appFooter></appFooter>
+  </main>
 </template>
 
 <script>
-import payment from './payment.vue'
+import appFooter from '~/components/footer.vue'
 
 export default {
+  head: {
+    titleTemplate: 'Mail The Circle',
+    meta: [{
+      hid: 'description',
+      name: 'description',
+      content: 'Take the circle game to the next level and mail the circle to your unexpecting friend or foe. For $4.99, we will print, package, and mail the circle.'
+    }]
+  },
   components: {
-    payment
+    appFooter
   },
   methods: {
     goToPayments() {
@@ -80,5 +105,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
+@import 'assets/variables.scss';
+@import 'assets/base.scss';
 </style>

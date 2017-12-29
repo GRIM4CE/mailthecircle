@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html {{ HTML_ATTRS }}>
 
 <head>
   <meta charset="utf-8">
-  <title>Mail The Circle</title>
-  <meta name="description" content="Take the circle game to the next level and mail the circle to your unexpecting friend or foe. For $4.99, we will print, package, and mail the circle.">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css?family=Bungee|Open+Sans:300,400" rel="stylesheet">
 
-  <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
 
   <!--  Social Meta -->
-  <meta property="og:image" content="assets/mail-the-circle-sm.jpg">
+  <meta property="og:image" content="/mail-the-circle-sm.jpg">
   <meta property="og:description" content="Take the circle game to the next level and mail the circle to your unexpecting friend or foe. For $4.99, we will print, package, and mail the circle.">
   <meta property="og:title" content="Mail The Circle">
 
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111647552-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -32,9 +30,8 @@
   </script>
 </head>
 
-<body>
-  <div id='app'></div>
-  <script type="text/javascript" src="bundle.js"></script>
+<body {{ BODY_ATTRS }}>
+  {{ APP }}
 </body>
 
 </html>

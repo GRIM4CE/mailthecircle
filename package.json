@@ -4,27 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"webpack -w\" \"node server.js\" \"open http://localhost:4200\""
+    "dev": "nuxt",
+    "build": "nuxt build --spa",
+    "start": "nuxt start --spa"
   },
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.2",
-    "vue.js": "^0.3.2"
-  },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "concurrently": "^2.2.0",
-    "copy-webpack-plugin": "^4.3.1",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.5",
     "node-sass": "^4.7.2",
-    "prerender-spa-plugin": "^2.1.0",
-    "sass-loader": "^6.0.6",
-    "vue-loader": "^13.6.0",
-    "vue-router": "^3.0.1",
-    "vue-template-compiler": "^2.5.10",
-    "webpack": "^3.10.0"
+    "nuxt": "^1.0.0-rc11",
+    "sass-loader": "^6.0.6"
   }
 }
